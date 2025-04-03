@@ -67,7 +67,7 @@ const AdminRules = () => {
                 onChange={e => setNewRule({...newRule, condition: e.target.value})}
               />
               <p className="text-xs text-muted-foreground mt-1">
-                Use logical expressions like {"'quantity > 0'"} or {"'complexity === \"high\"'"}
+                Use logical expressions like {'quantity > 0'} or {'complexity === "high"'}
               </p>
             </div>
             
