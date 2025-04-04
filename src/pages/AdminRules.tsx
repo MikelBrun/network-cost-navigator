@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -254,7 +253,7 @@ const AdminRules = () => {
                   rows={2}
                 />
                 <p className="text-xs text-gray-500 mt-1">
-                  Use JavaScript syntax for conditions (e.g., "param1 {'>'}0 && param2 === 'value'")
+                  Use JavaScript syntax for conditions (e.g., "param1 {'>'} 0 && param2 === 'value'")
                 </p>
               </div>
               
