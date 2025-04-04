@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,10 +14,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 196 100% 47%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 181 100% 40%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
@@ -35,19 +36,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -97,5 +91,48 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Custom styles for our application */
+@layer components {
+  .section-title {
+    @apply text-xl font-semibold text-netcost-blue-dark mb-4;
+  }
+  
+  .subsection {
+    @apply border rounded-md p-4 mb-6 shadow-sm;
+  }
+  
+  .subsection-title {
+    @apply text-lg font-medium text-netcost-teal-dark mb-3;
+  }
+  
+  .form-row {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4 mb-4;
+  }
+  
+  .input-label {
+    @apply block text-sm font-medium mb-1;
+  }
+  
+  .table-header {
+    @apply bg-netcost-blue-light px-4 py-2 text-left font-medium;
+  }
+  
+  .table-cell {
+    @apply px-4 py-2 border-b;
+  }
+  
+  .table-row-alt:nth-child(even) {
+    @apply bg-gray-50;
+  }
+  
+  .cost-report-section {
+    @apply border-b pb-4 mb-4;
+  }
+  
+  .cost-total {
+    @apply text-lg font-bold text-netcost-blue-dark;
   }
 }
