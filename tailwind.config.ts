@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -62,20 +61,7 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				},
-        // Adding custom colors for our network cost navigator
-        netcost: {
-          blue: {
-            light: '#e6f7ff',
-            DEFAULT: '#0ea5e9',
-            dark: '#0369a1',
-          },
-          teal: {
-            light: '#ccfbf1',
-            DEFAULT: '#14b8a6',
-            dark: '#0f766e',
-          }
-        }
+				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
